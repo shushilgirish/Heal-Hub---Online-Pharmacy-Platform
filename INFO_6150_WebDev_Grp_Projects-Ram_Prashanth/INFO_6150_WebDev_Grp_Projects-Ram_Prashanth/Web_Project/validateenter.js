@@ -20,5 +20,11 @@ function validateForm() {
         passwordInput.classList.add('is-invalid');
     }
 
-    return emailValid && passwordValid;
+    if (emailValid && passwordValid) {
+       
+        window.location.href = 'login.html';
+    } 
+
+    return false;
+
 }
