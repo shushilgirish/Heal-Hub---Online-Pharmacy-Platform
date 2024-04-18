@@ -1,0 +1,31 @@
+/* Custom styling for About page */
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* Dark gray */
+  }
+  
+  .section-description {
+    font-size: 16px;
+    color: #666; /* Medium gray */
+    margin-bottom: 20px;
+  }
+  
+  .join-button {
+    margin-top: 20px;
+    background-color: #007bff; /* Bootstrap primary color */
+    border-color: #007bff;
+  }
+  
+  .join-button:hover {
+    background-color: #0056b3; /* Darker shade of primary color on hover */
+    border-color: #0056b3;
+  }
+  
+  .join-team-button {
+    margin-top: 20px;
+  }
+  
+  /* Additional styling as needed */
+  
