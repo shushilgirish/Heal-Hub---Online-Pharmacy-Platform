@@ -7,7 +7,13 @@ const cors = require('cors');
 
  
 const app = express();
-app.use(cors());
+app.use(cors(
+ {
+ origin: ["https://deploy-mern-1whq.vercel.app"],
+ methods:["POST","GET"],
+ credentials:true
+ }
+));
 const{notFound, errorHandler} = require('./Middlewares/errorHandler');
 app.use(express.static('public'));
   // Initialize express app here
@@ -18,6 +24,7 @@ dotenv.config({ path: './Routes/.env' });
 // Connect to the database
 dbConnect();
 
+mongoose.connect('mongodb+srv://gokulravi221600:Healhub2024@cluster0.r20ki9s.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 
 app.use(bodyParser.json());  
 app.use(bodyParser.urlencoded({ extended: false }));   
